@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "esbuild src/main.jsx --bundle --platform=neutral --main-fields=module,main --outdir=js",
+    "build": "esbuild src/main.jsx --bundle --platform=neutral --main-fields=module,main --outdir=share",
     "watch": "npm run build -- --watch",
     "minify": "npm run build -- --minify --out-extension:.js=.min.js",
     "release": "run-p build minify"
