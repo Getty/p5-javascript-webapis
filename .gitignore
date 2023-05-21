@@ -1,2 +1,5 @@
 JavaScript-WebAPIs-*
 .build
+node_modules
+js
+.bash_history

@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "esbuild src/main.jsx --bundle --platform=neutral --main-fields=module,main --outdir=js",
+    "watch": "npm run build -- --watch",
+    "minify": "npm run build -- --minify --out-extension:.js=.min.js",
+    "release": "run-p build minify"
+  },
+  "dependencies": {
+    "core-js": "^3.30.2",
+    "text-encoding-polyfill": "^0.6.7",
+    "url-polyfill": "^1.1.12"
+  },
+  "devDependencies": {
+    "esbuild": "0.17.19",
+    "new-run-all": "^1.0.2"
+  }
+}
